@@ -8,9 +8,7 @@ def heapify(vetor, n, i, d):
     for k in range(d):
         filho = d * i + k + 1  # Fórmula do k-ésimo filho no vetor
 
-    
-        # Se o filho existe dentro da arena (filho < n)
-        # e tem valor maior do que o 'maior' encontrado até agora
+        # Se o filho existe e tem valor maior do que o 'maior' encontrado até agora
         if filho < n and vetor[filho] > vetor[maior]:
             maior = filho
             
