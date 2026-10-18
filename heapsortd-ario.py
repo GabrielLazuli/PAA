@@ -47,15 +47,10 @@ def heap_sort_d_ario(vetor, d):
         heapify(vetor, i, 0, d)
 
 
-# ======================================================================
-# BATERIA DE TESTES
-# ======================================================================
-
-# Exemplo 1: Heap Ternário (d = 3 filhos)
 vetor_teste_1 = []
 
-#geração de vetor aleatorio de 20 entradas 
-for i in range(30):
+#geração de vetor aleatorio de 10 entradas 
+for i in range(10):
     vetor_teste_1.append(i)
 random.shuffle(vetor_teste_1)
 

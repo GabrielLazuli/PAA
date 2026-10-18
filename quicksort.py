@@ -1,3 +1,5 @@
+import random 
+
 def quick_sort(lista): 
 
     if len(lista) <= 1:
@@ -11,8 +13,13 @@ def quick_sort(lista):
 
     return quick_sort(esquerda) + meio + quick_sort(direita)
 
-lista = [1,3,9,6,7,4,8,2,5]
+vetor_teste_1 = []
 
-print(f"Desordenado: {lista}" )
-lista = quick_sort(lista)
+for i in range(10):
+    vetor_teste_1.append(i)
+random.shuffle(vetor_teste_1)
+
+
+print(f"Desordenado: {vetor_teste_1}" )
+lista = quick_sort(vetor_teste_1)
 print(f"Ordenado:    {lista}" )
